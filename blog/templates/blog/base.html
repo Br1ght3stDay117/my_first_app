@@ -1,0 +1,112 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Executive Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false);
+		function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="{%static 'css/bootstrap.css'%}" rel="stylesheet" type="text/css" media="all" />
+<link href="{% static 'css/style.css'%}" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="{% static 'css/flexslider.css'%}" type="text/css" media="screen" property="" />
+<!-- js -->
+<script type="text/javascript" src="{% static 'js/jquery-2.1.4.min.js'%}"></script>
+<!-- //js -->
+<!-- font-awesome icons -->
+<link href="{% static 'css/font-awesome.css'%}" rel="stylesheet" type="text/css" media="all" />
+<!-- //font-awesome icons -->
+<link href="//fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<!-- start-smoth-scrolling -->
+<script type="text/javascript" src="{% static 'js/move-top.js'%}"></script>
+<script type="text/javascript" src="{% static 'js/easing.js'%}"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event){
+			event.preventDefault();
+			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+		});
+	});
+</script>
+</head>
+<body>
+    {% block content %}
+    {% endblock %}
+<div class="footer">
+		<div class="container">
+			<div class="footer-w3layouts">
+				<div class="col-md-3 footer-agileits">
+					<h3>Especializados</h3>
+					<ul>
+						<li>Android Studio</li>
+						<li>Visual Studio</li>
+						<li>Epic Games</li>
+						<li>CryEngine</li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-wthree">
+					<h3>Asociados</h3>
+					<ul>
+						<li>Unity</li>
+						<li>Autodesk</li>
+						<li>JetBrains</li>
+						<li>Blender</li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-w3-agileits">
+					<h3>Consulta</h3>
+					<ul>
+						<li>Mariano Rivas</li>
+						<li>Ben Tristem</li>
+						<li>Sam Pattuzzi</li>
+						<li>Odin Fenández</li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-agileits-w3layouts">
+					<h3>Nuestros enlaces</h3>
+					<ul>
+						<li><a href="{% url 'index' %}">Inicio</a></li>
+						<li><a href="{% url 'about' %}">Acerca de</a></li>
+						<li><a href="{% url 'galeria' %}">Galería</a></li>
+						<li><a href="{% url 'contacto' %}">Contacto</a></li>
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="footer-w3-agile">
+				<div class="col-md-6 w3l-footer-top">
+					<h3>Noticias</h3>
+					<form action="#" method="post" class="newsletter">
+						<input class="email" type="email" placeholder="correo..." required="">
+						<input type="submit" class="submit"  value="">
+					</form>
+					<div class="footer-agile">
+						<div class="col-md-6 footer-w3-1">
+							<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+							<p> #424 Candiles,  </p>
+							<p>Querétaro, México</p>
+						</div>
+						<div class="col-md-6 footer-w3l-1">
+							<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+							<p> +052 442 445 995.</p>
+							<p> +052 442 315 996.</p>
+						</div>
+							<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-6 w3ls-social-icons">
+					<h3>Síguenos en redes sociales</h3>
+					<a class="facebook" href="#"><i class="fa fa-facebook"></i></a>
+					<a class="twitter" href="#"><i class="fa fa-twitter"></i></a>
+					<a class="pinterest" href="#"><i class="fa fa-pinterest"></i></a>
+					<a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

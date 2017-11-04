@@ -1,0 +1,199 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>Acerca de</title>
+</head>
+	
+<body>
+<!-- banner -->
+{% block content %}
+	<div class="banner1">
+		<div class="container">
+			<div class="agile-header">
+				<div class="agileits-contact-info text-right">
+					<ul>
+						<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">correo@ejemplo.com</a></li>
+						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(+52) 442 486 78 85</li>
+					</ul>
+				</div>
+				<div class="w3_agileits_social_media">
+					<ul>
+						<li class="agileinfo_share">Compartir</li>
+						<li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1><a class="navbar-brand" href="{% url 'index' %}">OmicronNu</a></h1>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--iris">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item menu__item--current"><a href="{% url 'index' %}" class="menu__link">Inicio</a></li>
+							<li class="menu__item"><a href="{% url 'about' %}" class="menu__link">Acerca de nosotros</a></li>
+							<li class="menu__item"><a href="{% url 'galeria' %}" class="menu__link">Galería</a></li>
+							<li class="menu__item"><a href="{% url 'servicios' %}" class="menu__link">Servicios</a></li>
+							<li class="menu__item"><a href="{% url 'contacto' %}" class="menu__link">Contacto</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- About -->
+	<div class="courses">
+		<div class="container"> 
+			<h2 class="w3ls_head">Acerca de nosotros</h2>
+			<p class="w3layouts_para">Somos una empresa emergente, desarrolladora de videojuegos. Cada uno de nuestros videojuegos
+            están diseñados con el objetivo de brindarte algo más que sólo horas de diversión. Están pensados para que mientras juegas
+            y te diviertes, aprendas algo útil, algo nuevo. Están diseñados para inspirarte y motivarte a ser mejor cada día. Están diseñados
+            para enseñarte algo nuevo. Fueron creados para abrirte la mente a nuevas ideas, para impulsar tu creatividad e imaginación.</p>
+			<div class="agileits_w3layouts_team_grids w3ls_courses_grids">
+				<div class="col-md-6 w3ls_banner_bottom_left w3ls_courses_left">
+					<div class="w3ls_courses_left_grids">
+						<div class="w3ls_courses_left_grid">
+							<h3><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Pensados para inspirar a los demás</h3>
+							<p>El principal objetivo de nuestros juegos es inspirarte, motivarte a aprender. Nuestro objetivo es que nuestros
+                            usuarios se diviertan, pero que además se queden con algo extra, algo útil para sus vidas.
+                            Nuestro objetivo es que se queden con la curiosidad de aprender más, que se queden con las ganas de saber más.
+                            El objetivo es que se apasionen por el conocimiento, que al igual que nosotros tengan esa chispa para hacer cosas
+                            nuevas.</p>
+						</div>
+						<div class="w3ls_courses_left_grid">
+							<h3><i class="fa fa-pencil-square-o" aria-hidden="true"></i>Pensados para conquistar al mundo</h3>
+							<p>Nuestros juegos fueron diseñados para que nuestros usuarios se sientan identificados con los personajes,
+                            que se apasionen por nuestras historias. Porque creemos que lo más importante es tener algo bueno que contar,
+                            las historias de nuestros juegos son lo más importante para nosotros, y es a lo que más esfuerzo dedicamos.</p>
+						</div>
+						
+					</div>
+				</div>
+				<div class="col-md-6 agileits_courses_right">
+					<img src="{% static 'images/6.jpg'%}" alt=" " class="img-responsive">
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- /About -->
+<!--client-->
+
+	<!--//client-->
+<!-- team -->
+	<div class="team">
+		<div class="container">
+			<h3 class="w3ls_head">Nuestro equipo</h3>
+			<p class="w3layouts_para">Contamos con grandes profesionistas, nuestro personal está altamente especializado y está
+            capacitado para trabajar en equipo como una máquina de alta presición. Nos centramos en la eficiencia para poder brindar
+            un resultado excepcional.</p>
+			<div class="w3_services_grids">
+				<div class="col-md-3 w3ls_team_grid">
+					<div class="w3ls_team_grid1 hover15">
+						<figure>
+							<img src="{% static 'images/team5.jpg' %}" alt=" " class="img-responsive" />
+						</figure>
+						<div class="w3ls_team_grid1_pos">
+							<ul class="social-icons">
+								<li><a href="#" class="icon icon-border facebook"></a></li>
+								<li><a href="#" class="icon icon-border twitter"></a></li>
+								<li><a href="#" class="icon icon-border instagram"></a></li>
+							</ul>
+						</div>
+					</div>
+					<h4>Samantha</h4>
+					<p>Líder de equipo de diseño</p>
+				</div>
+				<div class="col-md-3 w3ls_team_grid">
+					<div class="w3ls_team_grid1 hover15">
+						<figure>
+							<img src="{% static 'images/team6.jpg'%}" alt=" " class="img-responsive" />
+						</figure>
+						<div class="w3ls_team_grid1_pos">
+							<ul class="social-icons">
+								<li><a href="#" class="icon icon-border twitter"></a></li>
+								<li><a href="#" class="icon icon-border instagram"></a></li>
+								<li><a href="#" class="icon icon-border facebook"></a></li>
+							</ul>
+						</div>
+					</div>
+					<h4>Monica</h4>
+					<p>Líder de equipo de programación</p>
+				</div>
+				<div class="col-md-3 w3ls_team_grid">
+					<div class="w3ls_team_grid1 hover15">
+						<figure>
+							<img src="{% static 'images/team7.jpg' %}" alt=" " class="img-responsive" />
+						</figure>
+						<div class="w3ls_team_grid1_pos">
+							<ul class="social-icons">
+								<li><a href="#" class="icon icon-border instagram"></a></li>
+								<li><a href="#" class="icon icon-border facebook"></a></li>
+								<li><a href="#" class="icon icon-border twitter"></a></li>
+							</ul>
+						</div>
+					</div>
+					<h4>Rebeca</h4>
+					<p>Líder de equipo de modelado y animación</p>
+				</div>
+				<div class="col-md-3 w3ls_team_grid">
+					<div class="w3ls_team_grid1 hover15">
+						<figure>
+							<img src="{% static 'images/team8.jpg' %}" alt=" " class="img-responsive" />
+						</figure>
+						<div class="w3ls_team_grid1_pos">
+							<ul class="social-icons">
+								<li><a href="#" class="icon icon-border pinterest"></a></li>
+								<li><a href="#" class="icon icon-border twitter"></a></li>
+								<li><a href="#" class="icon icon-border instagram"></a></li>
+							</ul>
+						</div>
+					</div>
+					<h4>Valeria</h4>
+					<p>Guionista y directora cinematográfica</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //team -->
+<!-- footer -->
+
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+{% endblock %}
+</body>
+</html>

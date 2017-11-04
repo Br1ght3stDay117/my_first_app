@@ -1,0 +1,232 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Servicios</title>
+</head>
+<body>
+<!-- banner -->
+{% block content %}
+	<div class="banner1">
+		<div class="container">
+			<div class="agile-header">
+				<div class="agileits-contact-info text-right">
+					<ul>
+						<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">correo@ejemplo.com</a></li>
+						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(+52) 442 486 78 85</li>
+					</ul>
+				</div>
+				<div class="w3_agileits_social_media">
+					<ul>
+						<li class="agileinfo_share">Compartir</li>
+						<li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1><a class="navbar-brand" href="{% url 'index' %}">OmicronNu</a></h1>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--iris">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item menu__item--current"><a href="{% url 'index' %}" class="menu__link">Inicio</a></li>
+							<li class="menu__item"><a href="{% url 'about' %}" class="menu__link">Acerca de nosotros</a></li>
+							<li class="menu__item"><a href="{% url 'galeria' %}" class="menu__link">Galería</a></li>
+							<li class="menu__item"><a href="{% url 'servicios' %}" class="menu__link">Servicios</a></li>
+							<li class="menu__item"><a href="{% url 'contacto' %}" class="menu__link">Contacto</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+		</div>
+	</div>
+<!-- //banner -->
+<!-- services -->
+<!-- services -->
+	<div class="services">
+		<div class="container">
+			<div class="w3_agile_banner_bottom_grid">
+				
+				<div class="w3_agile_banner_bottom_grid_pos">
+					
+					<h2 class="w3ls_head">Nuestros servicios</h2>
+				</div>
+			</div>
+			<p class="w3layouts_para">Ofrecemos los mejores servicios en cada uno de nuestros juegos
+                para brindar la mejor experiencia de usuario posible</p>
+			<div class="agile_banner_bottom_grids">
+				<div class="col-md-3 agile_services_grid">
+					<div class="agileits_w3layouts_service_grid">
+						<div class="w3_agileits_service_grid">	
+							<span></span>
+							<i class="fa fa-briefcase" aria-hidden="true"></i>
+						</div>
+					</div>
+					<h4>Actualizaciones gratuitas</h4>
+					<p>DLC y paquetes de expansión gratis para todos nuestros juegos, nuevas historias extra cada 6 meses, personajes y
+                    equipamiento nuevo cada 2 semanas. </p>
+					
+				</div>
+				<div class="col-md-3 agile_services_grid">
+					<div class="agileits_w3layouts_service_grid">
+						<div class="w3_agileits_service_grid">	
+							<span></span>
+							<i class="fa fa-bar-chart" aria-hidden="true"></i>
+						</div>
+					</div>
+					<h4>Gran comunidad de usuarios</h4>
+					<p>Cada uno de nuestros juegos cuenta con multijugador, lo permite expandir la experiencia y poder compartirla con otros.
+                        Una gran comunidad de usuarios permite tener una gran multijugador, contamos con un sistema de mensajería instantanea
+                    entre los miembros de la comunidad para así poder estar conectados.</p>
+					
+				</div>
+				<div class="col-md-3 agile_services_grid">
+					<div class="agileits_w3layouts_service_grid">
+						<div class="w3_agileits_service_grid">	
+							<span></span>
+							<i class="fa fa-bullhorn" aria-hidden="true"></i>
+						</div>
+					</div>
+					<h4>Soporte técnico 24/7</h4>
+					<p>Contamos con soporte técnico especilizado para solucionar cualquier falla que se pudiera presentar</p>
+					
+				</div>
+				<div class="col-md-3 agile_services_grid">
+					<div class="agileits_w3layouts_service_grid">
+						<div class="w3_agileits_service_grid">	
+							<span></span>
+							<i class="fa fa-building-o" aria-hidden="true"></i>
+						</div>
+					</div>
+					<h4>Servidores dedicados</h4>
+					<p>Contamos con servidores dedicados para el multijugador para así poder bridar la mejor experiencia posible</p>
+					
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //services -->
+<!-- services-bottom -->
+	<div class="services-bottom services">
+		<div class="container">
+			<h3><i class="fa fa-quote-left" aria-hidden="true"></i>
+Una persona que nunca cometió un error, nunca intentó algo nuevo<i class="fa fa-quote-right" aria-hidden="true"></i>-Albert Einstein</h3>
+		</div>
+	</div>
+<!-- //services-bottom -->
+<!-- choose -->
+	<div class="choose">
+		<div class="container">
+			<div class="w3_agile_banner_bottom_grid">
+				
+				<div class="w3_agile_banner_bottom_grid_pos">
+					<h3 class="w3ls_head">Únete a nuestro equipo</h3>
+				</div>
+			</div>
+			<p class="w3layouts_para">Contamos con instalaciones de última generación y con un excelente programa de capacitación.
+            </p>
+			<div class="agile_banner_bottom_grids">
+				<div class="col-md-4 agileinfo_choose_left">
+					<img src="{% static 'images/5.jpg' %}" alt=" " class="img-responsive" />
+				</div>
+				<div class="col-md-8 agileinfo_choose_right">
+					<div class="col-md-6 w3l_choose_right_grid">
+						<div class="w3_choose_right_grid_main">
+							<div class="col-xs-4 agileits_choose_left">
+								<div class="w3ls_choose_left_grid hvr-rectangle-out">
+									<i class="fa fa-building-o" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="col-xs-8 agileits_choose_right">
+								<h4>Infraestructura de vanguardia</h4>
+								<p>Contamos con las mejores instalaciones, con tecnología ultra moderna.</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="w3_choose_right_grid_main">
+							<div class="col-xs-4 agileits_choose_left">
+								<div class="w3ls_choose_left_grid hvr-rectangle-out">
+									<i class="fa fa-bullhorn" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="col-xs-8 agileits_choose_right">
+								<h4>Grandes equipos de trabajo</h4>
+								<p>Contamos con grandes equipos de trabajo altamente especializados</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="col-md-6 w3l_choose_right_grid">
+						<div class="w3_choose_right_grid_main">
+							<div class="col-xs-4 agileits_choose_left">
+								<div class="w3ls_choose_left_grid hvr-rectangle-out">
+									<i class="fa fa-bar-chart" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="col-xs-8 agileits_choose_right">
+								<h4>Economía fuerte</h4>
+								<p>Contamos con un gran presupuesto para la realización de nuestros proyectos</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+						<div class="w3_choose_right_grid_main">
+							<div class="col-xs-4 agileits_choose_left">
+								<div class="w3ls_choose_left_grid hvr-rectangle-out">
+									<i class="fa fa-briefcase" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="col-xs-8 agileits_choose_right">
+								<h4>Amplia bolsa de trabajo</h4>
+								<p>Requerimos especialistas de diversas áreas de conocimiento</p>
+							</div>
+							<div class="clearfix"> </div>
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+<!-- //choose -->
+<!-- //services -->
+<!-- footer -->
+
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,371 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>OmicronNu</title>
+<!--Para apliaciones móviles-->
+
+<!-- start-smoth-scrolling -->
+</head>
+	
+<body>
+<!-- banner -->
+{% block content %}
+	<div class="banner">
+		<div class="container">
+            <div class="agile-header">
+				<div class="agileits-contact-info text-right">
+					<ul>
+						<li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span><a href="mailto:info@example.com">correo@ejemplo.com</a></li>
+						<li><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span>(+52) 442 486 78 85</li>
+					</ul>
+				</div>
+				<div class="w3_agileits_social_media">
+					<ul>
+						<li class="agileinfo_share">Compartir</li>
+						<li><a href="#" class="wthree_facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="wthree_twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+						<li><a href="#" class="wthree_dribbble"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
+
+					</ul>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<nav class="navbar navbar-default">
+				<div class="navbar-header navbar-left">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<h1><a class="navbar-brand" href="{% url 'index' %}">OmicronNu</a></h1>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+					<nav class="menu menu--iris">
+						<ul class="nav navbar-nav menu__list">
+							<li class="menu__item menu__item--current"><a href="{% url 'index' %}" class="menu__link">Inicio</a></li>
+							<li class="menu__item"><a href="{% url 'about' %}" class="menu__link">Acerca de nosotros</a></li>
+							<li class="menu__item"><a href="{% url 'galeria' %}" class="menu__link">Galería</a></li>
+							<li class="menu__item"><a href="{% url 'servicios' %}" class="menu__link">Servicios</a></li>
+							<!--<li class="dropdown menu__item">
+								<a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">Short Codes <b class="caret"></b></a>
+								<ul class="dropdown-menu agile_short_dropdown">
+									<li><a href="{% url 'iconos'%}">Íconos</a></li>
+									<li><a href="{% url 'tipografia'%}">Tipografía</a></li>
+								</ul>
+							</li>-->
+							<li class="menu__item"><a href="{% url 'contacto' %}" class="menu__link">Contacto</a></li>
+						</ul>
+					</nav>
+				</div>
+			</nav>
+			<div class="w3l_banner_info">
+				<section class="slider">
+					<div class="flexslider">
+						<ul class="slides">
+							<li>
+								<div class="wthree_banner_info_grid">
+									<h3>OmicroNu...</h3>
+									<h3>Es más que un simple juego... </h3>
+									<h3>Te sorprenderá</h3>
+								</div>
+							</li>
+							<li>
+								<div class="wthree_banner_info_grid">
+									<h3>Te inspirará...</h3>
+									<h3>Te hará dar lo mejor de ti...</h3>
+									<h3>Dejará una huella en ti.</h3>
+								</div>
+							</li>
+							<li>
+								<div class="wthree_banner_info_grid">
+									<h3>Únete a nuestra aventura...</h3>
+									<h3>Exploremos el mundo juntos...</h3>
+									<h3>...</h3>
+								</div>
+							</li>
+							<li>
+								<div class="wthree_banner_info_grid">
+									<h3>Diviertéte,</h3>
+									<h3>Aprende,</h3>
+									<h3>Abre tu mente</h3>
+								</div>
+							</li>
+							<li>
+								<div class="wthree_banner_info_grid">
+									<h3>¿Quién soy?</h3>
+									<h3>...</h3>
+									<h3>Ven conmigo y lo descubrirás</h3>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- flexSlider -->
+					<script defer src="{% static 'js/jquery.flexslider.js'%}"></script>
+					<script type="text/javascript">
+						$(window).load(function(){
+							$('.flexslider').flexslider({
+								animation: "slide",
+								start: function(slider){
+								$('body').removeClass('loading');
+								}
+							  });
+							});
+					</script>
+				<!-- //flexSlider -->
+			</div>
+		</div>
+	</div>
+<!-- //banner -->
+
+<!-- welcome -->
+<div class="welcome">
+	 <div class="container">
+		 <div class="welcome-top">
+			<h2 class="w3ls_head">Bienvenidos</h2>
+			
+			 <p>Bienvenido al mundo de OmicronNu, un mundo increíble, que te sorprenderá. Vive una historia impresionante, ponte en la piel
+                 de tres grandes personajes, vive sus historias y ve como cada una de ellas están interconectadas.
+             Esperamos que te diviertas en este facinante mundo...o...mejor dicho ... Universo</p>
+		 </div>
+		  <div class="charitys">
+			  <div class="col-md-4 chrt_grid" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				   <div class="chrty">
+						<figure class="icon">
+							 <span class="glyphicon-icon glyphicon-heart" aria-hidden="true"></span>
+						</figure>
+						<h3>Lo vas a amar</h3>
+						<p>Creamos OmicronNu con la intención de que te diviertas y que en el proceso aprendas.
+                        Creamos una historia que estamos seguros vasa a amar, una historia que te dejará algo más que unas
+                            horas de diversión. </p>
+				  </div>
+			  </div>
+			  <div class="col-md-4 chrt_grid" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				   <div class="chrty">
+						<figure class="icon">
+							<span class="glyphicon-icon glyphicon-education" aria-hidden="true"></span>
+						</figure>						
+						<h3>Diseñado para aprender </h3>
+						<p>Diseñamos OmicronNu de forma que sus usuarios aprendan algo mientras juegan
+                        y se divierten. Lo diseñamos de forma tal, que aprender cosas nuevas sea
+                        interesante y divertido. Aprenderás cosas nuevas a través de una historia cautivante
+                        y apasionante.</p>
+				  </div>
+			  </div>
+			  <div class="col-md-4 chrt_grid" style="visibility: visible; -webkit-animation-delay: 0.4s;">
+				   <div class="chrty">
+						 <figure class="icon">
+							<span class="glyphicon-icon glyphicon-globe" aria-hidden="true"></span>
+						</figure>						
+						<h3>Es para todo el mundo</h3>
+						<p>Lo diseñamos para todo el mundo, lo creamos para que fuera atractivo para todos,
+                        desde estudiantes a profesionistas. Queremos que nuestro juego y nuestra historia, pueda
+                        llegar a cada rincón del mundo.</p>
+				  </div>
+			  </div>
+			  <div class="clearfix"></div>
+		 </div>	
+		<div class="banner-grids">
+			<div class="col-md-8 banner-grid1">
+				
+				<h5>Es puro arte</h5>
+				<p>Pusimos el máximo esfuerzo en los detalles, porque sabemos que las pequeñas cosas importan y mucho. Verificamos
+                cada detalle, desde la iluminación hasta la música con el objetivo de brindar la mejor experiencia posible.</p>
+			</div>
+			<div class="col-md-4 banner-grid">
+				<img src="{% static 'images/1.jpg'%}" alt=" " class="img-responsive">
+			</div>
+				<div class="clearfix"></div>
+		</div>				 
+	 </div>
+</div>
+<!-- //welcome -->
+
+<!--client-->
+	<div class="client">
+		<div class="container">
+			<h3 class="w3ls_head">Lo que los clientes dicen</h3>
+			<p class="w3l">La opinión de nuestros clientes es lo más importante para nosotros</p>
+			<!--screen-gallery-->
+						<div class="sreen-gallery-cursual">
+							 <!-- required-js-files-->
+							<link href="{% static 'css/owl.carousel.css'%}" rel="stylesheet">
+							    <script src="{% static 'js/owl.carousel.js'%}"></script>
+							        <script>
+							    $(document).ready(function() {
+							      $("#owl-demo").owlCarousel({
+							        items :1,
+							        lazyLoad : true,
+							        autoPlay : true,
+							        navigation :true,
+							        navigationText :  false,
+							        pagination : true,
+							      });
+							    });
+							    </script>
+								 <!--//required-js-files-->
+						       <div id="owl-demo" class="owl-carousel">
+							      <div class="item-owl">
+					                	<div class="customer-say">
+											  <div class="col-md-6 customer-grid">
+												<div class="de_testi">
+													<div class="quotes"><img src="{% static 'images/img1.jpg'%}" alt=""></div>
+														<div class="de_testi_by">
+															<p>OmicronNu es un excelente juego, no soy mucho de videojuegos, pero este me encantó</p>
+															<a href="#">Sofía </a>
+														</div>
+															<div class="clearfix"></div>     
+												</div>
+											   </div>
+											<div class="col-md-6 customer-grid">
+											   <div class="de_testi">
+													<div class="quotes"><img src="{% static 'images/img2.jpg'%}" alt=""></div>
+														<div class="de_testi_by">
+															<p>Supero todas mis expectativas, en verdad lo recomiendo</p>
+															<a href="#">Monica </a>
+														</div>
+														<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
+					                </div>
+					                 <div class="item-owl">
+					                	<div class="customer-say">
+											  <div class="col-md-6 customer-grid">
+												<div class="de_testi">
+													<div class="quotes"><img src="{% static 'images/img3.jpg'%}" alt=""></div>
+														<div class="de_testi_by">
+															<p>Un juego con una historia muy emotiva e impactante, realmente muy bueno</p>
+															<a href="#">Samantha </a>
+														</div>
+															<div class="clearfix"></div>     
+												</div>
+											   </div>
+											<div class="col-md-6 customer-grid">
+											   <div class="de_testi">
+													<div class="quotes"><img src="{% static 'images/img4.jpg'%}" alt=""></div>
+														<div class="de_testi_by">
+															<p>Excelentes gráficos, una muy buena jugabilidad y una muy buena historia</p>
+															<a href="#">John </a>
+														</div>
+														<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
+					                </div>
+					                 <div class="item-owl">
+					                	<div class="customer-say">
+											  <div class="col-md-6 customer-grid">
+												<div class="de_testi">
+													<div class="quotes"><img src="{% static 'images/img5.jpg'%}" alt=""></div>
+														<div class="de_testi_by">
+															<p>Es un juego que te hace pensar, pero que a la vez te divierte mucho</p>
+															<a href="#">Michael </a>
+														</div>
+															<div class="clearfix"></div>     
+												</div>
+											   </div>
+											<div class="col-md-6 customer-grid">
+											   <div class="de_testi">
+													<div class="quotes"><img src="{% static 'images/img6.jpg'%}" alt=""></div>
+														<div class="de_testi_by">
+															<p>Un juego muy bonito, con muy buen soundtrack y unos detalles muy cuidados</p>
+															<a href="#">Rebeca </a>
+														</div>
+														<div class="clearfix"></div>
+												</div>
+											</div>
+										</div>	
+					                </div>
+				              </div>
+						</div>
+						<!--//screen-gallery-->
+		</div>
+	</div>	
+	<!--//client-->
+<!-- what -->
+<div class="what-w3ls">
+		<div class="container">
+			<h3 class="w3ls_head">Proceso en el trabajo</h3>
+			<p class="w3agile">Trabajamos duro para poder ofrecer a nuestros clientes un producto final de alta calidad. Dedicamos cientos
+            de horas para la realización de un producto final, el cual debe cumplir con los más altos estándares de la industria.</p>
+				<div class="what-grids">
+					<div class="col-md-6 what-grid">
+						<img src="{% static 'images/2.jpg'%}" class="img-responsive" alt=""/>
+						<div class="what-agile-info">
+							<h4>Trabajo en equipo</h4>
+							<p>Uno de los aspectos más importante para la realización de un producto de alta calidad es un buen trabajo
+                            en equipo. Es por eso que dedicamos nuestro máximo esfuerzo para que el equipo funcione de la mejor manera
+                            posible.</p>
+						</div>
+					</div>
+					<div class="col-md-6 what-grid1">
+						<div class="what-top">
+							<div class="what-left">
+								<i class="glyphicon glyphicon-tree-deciduous" aria-hidden="true"></i>
+							</div>
+							<div class="what-right">
+								<h4>Disciplina</h4>
+								<p>Los miembros de nuestro equipo cuentan con una gran disciplina a la hora de realizar el trabajo, por
+                                lo que el desempeño es excelente.</p>
+							</div>
+								<div class="clearfix"></div>
+						</div>
+						<div class="what-top1">
+							<div class="what-left">
+								<i class="glyphicon glyphicon-flash" aria-hidden="true"></i>
+							</div>
+							<div class="what-right">
+								<h4>Eficiencia</h4>
+								<p>Estamos centrados en la eficiencia, ser eficientes al realizar el trabajo es fundamental para poder
+                                terminar cualquier tipo de proyecto.</p>
+							</div>
+								<div class="clearfix"></div>
+						</div>
+						<div class="what-top1">
+							<div class="what-left">
+								<i class="glyphicon glyphicon-fire" aria-hidden="true"></i>
+							</div>
+							<div class="what-right">
+								<h4>Pasión</h4>
+								<p>Sentir pasión y amar tu trabajo es la clave del éxito de cualquier empresa, nuestro equipo
+                                realiza cada una de sus activades con toda la pasión posible</p>
+							</div>
+								<div class="clearfix"></div>
+						</div>
+					</div>
+						<div class="clearfix"></div>
+				</div>
+		</div>
+	</div>
+<!-- //what -->
+<!-- footer -->
+
+<!-- //footer -->
+<!-- for bootstrap working -->
+	<script src="{% static 'js/bootstrap.js'%}"></script>
+<!-- //for bootstrap working -->
+<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+	</script>
+<!-- //here ends scrolling icon -->
+{% endblock %}
+</body>
+</html>
